@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.njau.dao.TbalarmDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.njau.entity.Tbalarm">
+        <id column="id" property="id" />
+        <result column="deviceKey" property="deviceKey" />
+        <result column="deviceName" property="deviceName" />
+        <result column="deviceID" property="deviceID" />
+        <result column="nodeID" property="nodeID" />
+        <result column="lng" property="lng" />
+        <result column="lat" property="lat" />
+        <result column="alarmMessage" property="alarmMessage" />
+        <result column="alarmType" property="alarmType" />
+        <result column="alarmRange" property="alarmRange" />
+        <result column="dataValue" property="dataValue" />
+        <result column="recordTime" property="recordTime" />
+        <result column="handingFlag" property="handingFlag" />
+        <result column="HandlingMethod" property="HandlingMethod" />
+        <result column="HandlingUser" property="HandlingUser" />
+        <result column="handlingTime" property="handlingTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, deviceKey, deviceName, deviceID, nodeID, lng, lat, alarmMessage, alarmType, alarmRange, dataValue, recordTime, handingFlag, HandlingMethod, HandlingUser, handlingTime
+    </sql>
+
+</mapper>

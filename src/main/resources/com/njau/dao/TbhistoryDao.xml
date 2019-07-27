@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.njau.dao.TbhistoryDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.njau.entity.Tbhistory">
+        <id column="id" property="id" />
+        <result column="deviceKey" property="deviceKey" />
+        <result column="deviceName" property="deviceName" />
+        <result column="deviceID" property="deviceID" />
+        <result column="nodeID" property="nodeID" />
+        <result column="tem" property="tem" />
+        <result column="hum" property="hum" />
+        <result column="lng" property="lng" />
+        <result column="lat" property="lat" />
+        <result column="coordinateType" property="coordinateType" />
+        <result column="recordTime" property="recordTime" />
+        <result column="isAlarmData" property="isAlarmData" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, deviceKey, deviceName, deviceID, nodeID, tem, hum, lng, lat, coordinateType, recordTime, isAlarmData
+    </sql>
+
+</mapper>
