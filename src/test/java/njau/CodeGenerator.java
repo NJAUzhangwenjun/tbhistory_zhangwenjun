@@ -35,8 +35,9 @@ public class CodeGenerator {
 
         /**需要修改的地方，数据库id字段
         * */
-        gc.setIdType(IdType.UUID);
+       /* gc.setIdType(IdType.UUID);*/
 
+        gc.setIdType(IdType.AUTO);
         gc.setActiveRecord(true);
         gc.setEnableCache(false);// XML 二级缓存
         gc.setBaseResultMap(true);// XML ResultMap
@@ -125,7 +126,7 @@ public class CodeGenerator {
          * 需要修改的地方，数据库表
          */
 
-        strategy.setInclude(new String[]{"tbalarm","tbsyslog"});
+        strategy.setInclude(new String[]{"tbsyslog"});
         strategy.setControllerMappingHyphenStyle(true);
         // strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);
